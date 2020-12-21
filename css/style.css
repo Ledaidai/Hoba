@@ -793,3 +793,10 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+/* BRIEF PAGE*/
+.brief-container {
+  background-color: var(--c-grey-dark);
+  text-align: center;
+  padding: 100px;
+}
