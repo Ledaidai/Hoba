@@ -800,3 +800,45 @@ body {
   text-align: center;
   padding: 100px;
 }
+
+/* PORTFOLIO PAGE*/
+.portfolio-1-block {
+  background-color: var(--c-grey);
+}
+
+.portfolio-1-block-name {
+  font-size: 42px;
+  color: var(--txt-c-white);
+  text-align: center;
+  padding-top: 70px;
+}
+
+.portfolio-1-block-descr {
+  font-size: 24px;
+  color: var(--txt-c-black);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.portfolio-2-block {
+  background-color: var(--c-grey);
+}
+
+.portfolio-2-block-items {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+  justify-content: center;
+}
+
+.portfolio-2-block-item-name {
+  font-size: 36px;
+  color: var(--txt-c-pink);
+}
+
+.portfolio-2-block-item-project {
+  padding-top: 50px;
+  padding-right: 15px;
+}
