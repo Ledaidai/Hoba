@@ -892,3 +892,242 @@ body {
   font-size: 24px;
   color: var(--txt-c-white);
 }
+
+.portfolio-naming-right-column-link {
+  text-decoration: none;
+  color: #b8424b;
+}
+
+.portfolio-naming-right-column-link:visited {
+  text-decoration: none;
+  color: #b8424b;
+}
+
+/* PORTFOLIO-CATALOG PAGE*/
+.portfolio-catalog-container {
+  background-color: var(--c-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio-catalog-left-column {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-catalog-right-column {
+  width: 40%;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.portfolio-catalog-right-column-name {
+  font-size: 24px;
+  color: var(--txt-c-white);
+}
+
+.portfolio-catalog-right-column-link {
+  text-decoration: none;
+  color: #b8424b;
+}
+
+.portfolio-catalog-right-column-link:visited {
+  text-decoration: none;
+  color: #b8424b;
+}
+
+/* PORTFOLIO-SOCIAL PAGE*/
+.portfolio-social-container {
+  background-color: var(--c-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio-social-left-column {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-social-right-column {
+  width: 40%;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.portfolio-social-right-column-name {
+  font-size: 24px;
+  color: var(--txt-c-white);
+}
+
+/* PORTFOLIO-VIDEO PAGE*/
+.portfolio-video-container {
+  background-color: var(--c-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio-video-left-column {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-video-right-column {
+  width: 40%;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.portfolio-video-right-column-name {
+  font-size: 24px;
+  color: var(--txt-c-white);
+}
+
+.portfolio-video-right-column-link {
+  text-decoration: none;
+  color: #b8424b;
+}
+
+.portfolio-video-right-column-link:visited {
+  text-decoration: none;
+  color: #b8424b;
+}
+
+/* PORTFOLIO-SCRIPTS PAGE*/
+.portfolio-scripts-container {
+  background-color: var(--c-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio-scripts-left-column {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-scripts-right-column {
+  width: 40%;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.portfolio-scripts-right-column-name {
+  font-size: 24px;
+  color: var(--txt-c-white);
+}
+
+/* PORTFOLIO-STICKERPACKS PAGE*/
+.portfolio-stickerpacks-container {
+  background-color: var(--c-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio-stickerpacks-left-column {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-stickerpacks-right-column {
+  width: 40%;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.portfolio-stickerpacks-right-column-name {
+  font-size: 24px;
+  color: var(--txt-c-white);
+}
+
+/* PORTFOLIO-GOOGLE PAGE*/
+.portfolio-google-container {
+  background-color: var(--c-grey);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 70px;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio-google-left-column {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-google-right-column {
+  width: 40%;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+
+.portfolio-google-right-column-name {
+  font-size: 24px;
+  color: var(--txt-c-white);
+}
+
+.portfolio-google-right-column-link {
+  text-decoration: none;
+  color: #b8424b;
+}
