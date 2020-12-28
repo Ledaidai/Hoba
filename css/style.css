@@ -9,6 +9,8 @@
   --txt-c-black: #000;
   --txt-c-white: #fff;
   --txt-c-pink: #d997bb;
+
+  --animation-transition: all 0.2s ease-in-out;
 }
 
 html {
@@ -77,6 +79,7 @@ body {
 .header-menu-item {
   display: inline-block;
   padding-right: 15px;
+  transition: var(--animation-transition);
 }
 
 .header-menu-item > a {
@@ -93,18 +96,18 @@ body {
 
 .header-menu-item > a:hover {
   color: var(--txt-c-pink);
-  border-bottom: 0.07em solid;
 }
 
-.header-menu-item > a:active {
-  color: var(--txt-c-white);
+.active-menu {
+  color: var(--c-pink);
+  border-bottom: 0.07em solid;
 }
 
 .top-section {
   background-image: url(../img/front-page/shapka.jpg);
   width: 100%;
   height: 700px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -440,7 +443,7 @@ body {
   background-image: url(../img/front-page/block-8-brief.jpg);
   width: 100%;
   height: 560px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -605,10 +608,9 @@ body {
   background-image: url(../img/services/backdr.jpg);
   width: 100%;
   height: 560px;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: absolute;
 }
 
 .question-name {
@@ -651,7 +653,7 @@ body {
   background-image: url(../img/about/cover.jpg);
   height: 96vh;
   width: 100%;
-  background-size: 115%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 0;
 }
