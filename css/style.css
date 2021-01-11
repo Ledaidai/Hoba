@@ -21,6 +21,7 @@ body {
   font-family: "Noto Serif", serif;
   box-sizing: border-box;
   margin: 0;
+  height: 100%;
 }
 
 * {
@@ -1132,4 +1133,35 @@ body {
 .portfolio-google-right-column-link {
   text-decoration: none;
   color: #b8424b;
+}
+
+.portfolio-down-block {
+  background-color: var(--c-grey-light);
+  padding: 20px;
+}
+
+.portfolio-down-block-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portfolio-down-block-item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-down-block-item > a {
+  text-decoration: none;
+  color: var(--txt-c-black);
+}
+
+.portfolio-down-block-item > a:visited {
+  color: var(--txt-c-black);
+}
+
+.portfolio-down-block-item > a:hover {
+  color: var(--txt-c-white);
+  text-decoration: underline;
 }
