@@ -1183,24 +1183,27 @@ body {
     background: var(--txt-c-pink);
     border-radius: 100%;
     padding: 12px 14px;
-    opacity: 0.50;
+    opacity: 0.5;
   }
 
   /* MODALS*/
+
   .modal-active {
     opacity: 1;
     pointer-events: all;
   }
+
   .modal-close-btn {
     font-size: 18px;
     position: absolute;
-    color:var(--c-grey-light);
+    color: var(--c-grey-light);
     background: var(--c-pink);
     top: 16px;
     right: 16px;
     cursor: pointer;
     padding: 10px 14px;
   }
+
   .modal {
     position: fixed;
     top: 0;
@@ -1212,7 +1215,13 @@ body {
     pointer-events: none;
     display: block;
   }
-  .modal-mobile-menu {
+
+  .visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #modal-mobile-menu {
     background: var(--c-grey-light);
   }
 
@@ -1221,7 +1230,6 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    
   }
 
   .mobile-menu-container {
@@ -1270,9 +1278,4 @@ body {
   .top-section-descr {
     font-size: 18px;
   }
-
-
-
-  }
-
 }
