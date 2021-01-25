@@ -1271,11 +1271,133 @@ body {
   .top-section {
     vertical-align: middle;
   }
+
   .top-section-name {
     font-size: 30px;
   }
 
   .top-section-descr {
     font-size: 18px;
+  }
+
+  /*BLOCK 1*/
+  .block-1-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .block-1-img-mobile {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .block-1-right-mobile {
+    width: auto;
+    padding: 20px 15px;
+  }
+
+  .block-1-hello-mobile {
+    font-size: 30px;
+  }
+
+  /*BLOCK 2 цитата 1*/
+  .block-2-quote-mobile {
+    font-size: 22px;
+  }
+
+  /*BLOCK 3*/
+  .block-3-name-mobile {
+    font-size: 30px;
+  }
+  .block-3-clients-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .block-3-clients-item-mobile {
+    width: 80%;
+  }
+
+  .block-3-line-mobile {
+    border-bottom: 2px solid var(--c-grey-dark);
+    margin-bottom: 15px;
+  }
+  .block-3-line {
+    border-right: none;
+  }
+
+  .block-3-clients-item-name-mobile {
+    font-size: 20px;
+  }
+
+  .block-3-clients-item-descr-mobile {
+    font-size: 14px;
+  }
+
+  /*BLOCK 4*/
+  .block-4-name-mobile {
+    font-size: 30px;
+  }
+
+  .block-4-utp-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding-left: 0;
+  }
+
+  .block-4-utp-item-mobile {
+    width: auto;
+  }
+
+  .block-4-utp-item-name-mobile {
+    font-size: 16px;
+  }
+
+  .block-4-utp-item-descr-mobile {
+    font-size: 14px;
+  }
+
+  /*BLOCK 5 цитата 2*/
+  .block-5-quote-mobile {
+    font-size: 22px;
+  }
+
+  /*BLOCK 4*/
+  .block-6-name-mobile {
+    font-size: 30px;
+  }
+
+  .block-6-name-ne-mobile {
+    font-size: 30px;
+  }
+
+  .block-6-content-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .block-6-content-text-mobile {
+    margin: 0;
+  }
+
+  .block-6-content-text-descr-mobile {
+    font-size: 14px;
+  }
+
+  .block-6-content-img-mobile {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
   }
 }
