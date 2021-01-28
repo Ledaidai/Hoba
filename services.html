@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Услуги копирайтера</title>
+
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
 </head>
@@ -26,80 +35,122 @@
                 <li class="header-menu-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <nav class="nav-container-mobile">
+            <i class="fas fa-bars mobile-menu" id="mobile-menu-btn"></i>
+        </nav>
     </header>
 
+    <!--MODALS-->
+
+    <div class="modal" id="modal-mobile-menu">
+        <div class="modal-mobile-menu-content">
+            <div class="mobile-menu-container">
+                <i class="fas fa-times modal-close-btn" id="modal-mobile-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="./index.html" class="mobile-menu-item">ГЛАВНАЯ</a>
+                    <a href="./services.html" class="mobile-menu-item">УСЛУГИ</a>
+                    <a href="./about.html" class="mobile-menu-item">ОБО МНЕ</a>
+                    <a href="./portfolio.html" class="mobile-menu-item">ПОРТФОЛИО</a>
+                    <a href="./contacts.html" class="mobile-menu-item">КОНТАКТЫ</a>
+                </nav>
+                <div class="mobile-menu-conacts">
+                    <hr class="top-section-line">
+                    <a href="tel:+380983120813" class="mobile-menu-tel">+38 098 312 08 13</a>
+                    <a href="mailto:daria.hoba@gmail.com" class="mobile-menu-e-mail">daria.hoba@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
-    <!--Услуги-->
+        <!--Услуги-->
         <section class="services-container">
-            <h1 class="services-name">УСЛУГИ</h1>
-            <ul class="services-items">
-                <li class="services-item-box">
+            <h1 class="services-name services-name-mobile">УСЛУГИ</h1>
+            <ul class="services-items services-items-mobile">
+                <li class="services-item-box services-item-box-mobile">
                     <img src="./img/services/1.preza.svg" alt="presentation" width="80px">
                     <h2>Презентация</h2>
-                    <p>Структурированная и полезная информация о компании или продукте. Адаптирована под ваши цели, аудиторию</p>
+                    <p class="services-item-descr-mobile">Структурированная и полезная информация о компании или
+                        продукте. Адаптирована под ваши цели,
+                        аудиторию</p>
                 </li>
-                <li class="services-item-box">
+                <li class="services-item-box services-item-box-mobile">
                     <img src="./img/services/2.texts.svg" alt="texts" width="80px">
                     <h2>Тексты</h2>
-                    <p>Контент для продающей страницы или сайта</p>
+                    <p class="services-item-descr-mobile">Контент для продающей страницы или сайта</p>
                 </li>
-                <li class="services-item-box">
+                <li class="services-item-box services-item-box-mobile">
                     <img src="./img/services/3.projects.svg" alt="projects" width="80px">
                     <h2>Описание проекта</h2>
-                    <p>Помощь в построении бизнес-модели, формировании стратегии и содержания проекта (ЦА, миссия, предложение,
-                    позиционирование, нейминг, слоган, история и т.д.)</p>
+                    <p class="services-item-descr-mobile">Помощь в построении бизнес-модели, формировании стратегии и
+                        содержания проекта (ЦА, миссия,
+                        предложение,
+                        позиционирование, нейминг, слоган, история и т.д.)</p>
                 </li>
-                <li class="services-item-box">
+                <li class="services-item-box services-item-box-mobile">
                     <img src="./img/services/4.mybis.svg" alt="google my business" width="80px">
                     <h2>Страница в Google Мой бизнес</h2>
-                    <p>Регистрация компании на картах и в поиске Google для продвижения бизнеса в интернете</p>
+                    <p class="services-item-descr-mobile">Регистрация компании на картах и в поиске Google для
+                        продвижения бизнеса в интернете</p>
                 </li>
-                <li class="services-item-box">
+                <li class="services-item-box services-item-box-mobile">
                     <img src="./img/services/5.concept.svg" alt="concepts" width="80px">
                     <h2>Создание концепций</h2>
-                    <p>Разработка идей для рекламной кампании, видео или ивента</p>
+                    <p class="services-item-descr-mobile">Разработка идей для рекламной кампании, видео или ивента</p>
                 </li>
-                <li class="services-item-box">
+                <li class="services-item-box services-item-box-mobile">
                     <img src="./img/services/6.conect.svg" alt="contact with the audience" width="80px">
                     <h2>Контакт с аудиторией</h2>
-                    <p>Брифы, анкеты, вопросы для интервью, инструкции, скрипты телефонных переговоров/продаж, др.</p>
+                    <p class="services-item-descr-mobile">Брифы, анкеты, вопросы для интервью, инструкции, скрипты
+                        телефонных переговоров/продаж, др.</p>
                 </li>
             </ul>
         </section>
 
-    <!--Цена-->
-        <section class="price-container">
-            <hr class="price-line">
-            <h2 class="price-header">ЦЕНА</h2>
-            <p class="price-dscr">Оплата за проект. Час работы — $10 - $12 (в зависимости от сложности).
-            Объем работы, сроки и стоимость оговариваем индивидуально после встречи или анализа ТЗ.</p>
-            <hr class="price-line">
+        <!--Цена-->
+        <section class="price-container price-container-mobile">
+            <hr class="price-line price-line-mobile">
+            <h2 class="price-header price-header-mobile">ЦЕНА</h2>
+            <p class="price-dscr price-dscr-mobile">Оплата за проект. Час работы — $10 - $12 (в зависимости от
+                сложности).
+                Объем работы, сроки и стоимость оговариваем индивидуально после встречи или анализа ТЗ.</p>
+            <hr class="price-line price-line-mobile">
         </section>
 
-    <!--Вопросы-->
+        <!--Вопросы-->
         <section class="question-container">
-            <h2 class="question-name">ЕСТЬ ВОПРОСЫ?</h2>
-            <p class="question-descr">Давайте обсудим!</p>
-            <ul class="question-items">
-                <li class="question-items-btn-1"><a href="./brief.html" class="pink-btn">Заполнить бриф</a></li>
-                <li class="question-items-btn-2"><a href="./contacts.html#contact-form" class="pink-btn">Написать</a></li>
+            <h2 class="question-name question-name-mobile">ЕСТЬ ВОПРОСЫ?</h2>
+            <p class="question-descr question-descr-mobile">Давайте обсудим!</p>
+            <ul class="question-items question-items-mobile">
+                <li class="question-items-btn-1 question-items-btn-1-mobile"><a href="./brief.html"
+                        class="pink-btn pink-btn-mobile">Заполнить
+                        бриф</a></li>
+                <li class="question-items-btn-2 question-items-btn-2-mobile"><a href="./contacts.html#contact-form"
+                        class="pink-btn">Написать</a>
+                </li>
             </ul>
         </section>
     </main>
 
     <!--Футер-->
-    <footer class="footer">
-        <p class="footer-name">© 2020, Novoseletska Daria</p>
-    
+    <footer class="footer footer-mobile">
+        <p class="footer-name footer-name-mobile">© 2020, Novoseletska Daria</p>
+
         <ul class="footer-social">
-            <li><a href="https://www.facebook.com/novoseletskayadp"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/da_ledaidai"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://www.facebook.com/novoseletskayadp"><i
+                        class="fab fa-facebook-square fa-facebook-square-mobile"></i></a></li>
+            <li><a href="https://www.instagram.com/da_ledaidai"><i
+                        class="fab fa-instagram-square fa-instagram-square-mobile"></i></a></li>
         </ul>
-    
+
         <ul class="footer-contacts">
-            <li><a href="tel:+380983120813" class="footer-contacts-tel">+38 098 312 08 13</a></li>
-            <li><a href="mailto:daria.hoba@gmail.com" class="footer-contacts-e-mail">daria.hoba@gmail.com</a></li>
+            <li><a href="tel:+380983120813" class="footer-contacts-tel footer-contacts-tel-mobile">+38 098 312 08 13</a>
+            </li>
+            <li><a href="mailto:daria.hoba@gmail.com"
+                    class="footer-contacts-e-mail footer-contacts-e-mail-mobile">daria.hoba@gmail.com</a></li>
         </ul>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
+
 </html>

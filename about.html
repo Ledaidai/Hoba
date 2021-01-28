@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Копирайтер Дарья Новоселецкая</title>
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
 </head>
@@ -26,77 +33,122 @@
                 <li class="header-menu-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <nav class="nav-container-mobile">
+            <i class="fas fa-bars mobile-menu" id="mobile-menu-btn"></i>
+        </nav>
     </header>
+
+    <!--MODALS-->
+
+    <div class="modal" id="modal-mobile-menu">
+        <div class="modal-mobile-menu-content">
+            <div class="mobile-menu-container">
+                <i class="fas fa-times modal-close-btn" id="modal-mobile-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="./index.html" class="mobile-menu-item">ГЛАВНАЯ</a>
+                    <a href="./services.html" class="mobile-menu-item">УСЛУГИ</a>
+                    <a href="./about.html" class="mobile-menu-item">ОБО МНЕ</a>
+                    <a href="./portfolio.html" class="mobile-menu-item">ПОРТФОЛИО</a>
+                    <a href="./contacts.html" class="mobile-menu-item">КОНТАКТЫ</a>
+                </nav>
+                <div class="mobile-menu-conacts">
+                    <hr class="top-section-line">
+                    <a href="tel:+380983120813" class="mobile-menu-tel">+38 098 312 08 13</a>
+                    <a href="mailto:daria.hoba@gmail.com" class="mobile-menu-e-mail">daria.hoba@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="about-block-1-container">
             <div class="about-block-1-text">
-                <h1 class="about-block-1-name">Давайте знакомиться!</h1>
-                    <p class="about-block-1-deskr">Меня зовут Дарья Новоселецкая. Я живу в Киеве и уже больше 5 лет помогаю бизнесу решать задачи с помощью текстов. <br>
-                    Считаю своим главным навыком умение не только хорошо генерировать идеи, но и придавать им нужную форму.
-                    Уверена, что харизма и чувство юмора являются ключом к мировому господству. Хотя у меня на данный момент таких планов
+                <h1 class="about-block-1-name about-block-1-name-mobile">Давайте знакомиться!</h1>
+                <p class="about-block-1-deskr about-block-1-deskr-mobile">Меня зовут Дарья Новоселецкая. Я живу в Киеве
+                    и уже больше 5 лет помогаю
+                    бизнесу решать задачи с помощью текстов. <br>
+                    Считаю своим главным навыком умение не только хорошо генерировать идеи, но и придавать им нужную
+                    форму.
+                    Уверена, что харизма и чувство юмора являются ключом к мировому господству. Хотя у меня на данный
+                    момент таких планов
                     нет)</p>
             </div>
         </section>
         <section class="about-block-2-container">
-            <h2 class="about-block-2-header">6 ФАКТОВ ОБО МНЕ</h2>
-            <div class="about-block-2-content">
-                <ul class="about-block-2-items-left">
+            <h2 class="about-block-2-header about-block-2-header-mobile">6 ФАКТОВ ОБО МНЕ</h2>
+            <div class="about-block-2-content about-block-2-content-mobile">
+                <ul class="about-block-2-items-left about-block-2-items-left-mobile">
                     <li>
-                        <h3>Образование</h3>
-                        <p>У меня филологическое образование. Я окончила Мариупольский гуманитарный университет по специальности «русский язык и
-                        литература, новогреческий».</p>
+                        <h3 class="about-block-2-items-name-mobile">Образование</h3>
+                        <p class="about-block-2-items-descr-mobile">У меня филологическое образование. Я окончила
+                            Мариупольский гуманитарный университет по
+                            специальности «русский язык и
+                            литература, новогреческий».</p>
                     </li>
                     <li>
-                        <h3>Начало карьеры</h3>
-                        <p>С 4 курса я работала в мариупольском лицее. Преподавала русский язык и литературу, была классным руководителем,
-                        педагогом-организатором и тренером дебатного клуба. Целых 5 лет)</p>
+                        <h3 class="about-block-2-items-name-mobile">Начало карьеры</h3>
+                        <p class="about-block-2-items-descr-mobile">С 4 курса я работала в мариупольском лицее.
+                            Преподавала русский язык и литературу, была
+                            классным руководителем,
+                            педагогом-организатором и тренером дебатного клуба. Целых 5 лет)</p>
                     </li>
                     <li>
-                        <h3>Работа</h3>
-                        <p>Прежде чем уйти на фриланс, я получила шикарный опыт работы в таких крупных украинских компаниях, как Prom.ua
-                        (сопровождение клиентов) и Rozetka (помощник маркетолога).</p>
+                        <h3 class="about-block-2-items-name-mobile">Работа</h3>
+                        <p class="about-block-2-items-descr-mobile">Прежде чем уйти на фриланс, я получила шикарный опыт
+                            работы в таких крупных украинских
+                            компаниях, как Prom.ua
+                            (сопровождение клиентов) и Rozetka (помощник маркетолога).</p>
                     </li>
                 </ul>
 
-                <img src="./img/about/about.jpg" alt="my photo" class="about-block-2-photo">
+                <img src="./img/about/about.jpg" alt="my photo" class="about-block-2-photo about-block-2-photo-mobile">
 
-                <ul class="about-block-2-items-right">
+                <ul class="about-block-2-items-right about-block-2-items-right-mobile">
                     <li>
-                        <h3>Участие в стартапах</h3>
-                        <p>За последние 4 года я создавала контент для 3 стартапов. Сферы их деятельности абсолютно разные: fashion (платформа для
-                        молодых дизайнеров), IT (разработка мессенджера), art (продвижение пластического театра).</p>
+                        <h3 class="about-block-2-items-name-mobile">Участие в стартапах</h3>
+                        <p class="about-block-2-items-descr-mobile">За последние 4 года я создавала контент для 3
+                            стартапов. Сферы их деятельности абсолютно
+                            разные: fashion (платформа для
+                            молодых дизайнеров), IT (разработка мессенджера), art (продвижение пластического театра).
+                        </p>
                     </li>
                     <li>
-                        <h3>Курсы</h3>
-                        <p>2014 и 2016 год — Свободная школа журналистики
-                        2017 год — Creative Management Camp (образовательная программа для менеджеров культурных проектов)
-                        2019 год — Школа дизайнеров виртуальных чат-бот сотрудников
-                        2020 год — Мини-курс HTML, CSS, JS</p>
+                        <h3 class="about-block-2-items-name-mobile">Курсы</h3>
+                        <p class="about-block-2-items-descr-mobile">2014 и 2016 год — Свободная школа журналистики
+                            2017 год — Creative Management Camp (образовательная программа для менеджеров культурных
+                            проектов)
+                            2019 год — Школа дизайнеров виртуальных чат-бот сотрудников
+                            2020 год — Мини-курс HTML, CSS, JS</p>
                     </li>
                     <li>
-                        <h3>Кроме работы</h3>
-                        <p>Занимаюсь организацией ивентов. Путешествую и разрабатываю новые маршруты. Люблю концерты и тематические фестивали.
-                        Слушаю подкасты о языке, литературе и музыке.</p>
+                        <h3 class="about-block-2-items-name-mobile">Кроме работы</h3>
+                        <p class="about-block-2-items-descr-mobile">Занимаюсь организацией ивентов. Путешествую и
+                            разрабатываю новые маршруты. Люблю концерты и
+                            тематические фестивали.
+                            Слушаю подкасты о языке, литературе и музыке.</p>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    
+
     <!--Футер-->
-    <footer class="footer">
-        <p class="footer-name">© 2020, Novoseletska Daria</p>
-    
+    <footer class="footer footer-mobile">
+        <p class="footer-name footer-name-mobile">© 2020, Novoseletska Daria</p>
         <ul class="footer-social">
-            <li><a href="https://www.facebook.com/novoseletskayadp"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/da_ledaidai"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://www.facebook.com/novoseletskayadp"><i
+                        class="fab fa-facebook-square fa-facebook-square-mobile"></i></a></li>
+            <li><a href="https://www.instagram.com/da_ledaidai"><i
+                        class="fab fa-instagram-square fa-instagram-square-mobile"></i></a></li>
         </ul>
-    
         <ul class="footer-contacts">
-            <li><a href="tel:+380983120813" class="footer-contacts-tel">+38 098 312 08 13</a></li>
-            <li><a href="mailto:daria.hoba@gmail.com" class="footer-contacts-e-mail">daria.hoba@gmail.com</a></li>
+            <li><a href="tel:+380983120813" class="footer-contacts-tel footer-contacts-tel-mobile">+38 098 312 08 13</a>
+            </li>
+            <li><a href="mailto:daria.hoba@gmail.com"
+                    class="footer-contacts-e-mail footer-contacts-e-mail-mobile">daria.hoba@gmail.com</a></li>
         </ul>
     </footer>
+    <script src="./scripts/main.js"></script>
 </body>
+
 </html>

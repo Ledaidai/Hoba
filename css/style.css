@@ -46,6 +46,23 @@ body {
   transition: var(--animation-transition);
 }
 
+.pink-btn-mobile {
+  background: var(--c-grey-dark);
+  border: 3px solid;
+  border-color: var(--c-pink);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--txt-c-white);
+  padding: 20px 35px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--animation-transition);
+}
+
 /* FRONT PAGE*/
 
 .nav-container {
@@ -1185,6 +1202,7 @@ body {
     border-radius: 100%;
     padding: 12px 14px;
     opacity: 0.5;
+    cursor: pointer;
   }
 
   /*FOOTER*/
@@ -1195,10 +1213,12 @@ body {
 
   .fa-facebook-square-mobile {
     font-size: 20px;
+    padding-top: 7px;
   }
 
   .fa-instagram-square-mobile {
     font-size: 20px;
+    padding-top: 7px;
   }
 
   .footer-contacts-tel-mobile {
@@ -1326,6 +1346,10 @@ body {
 
   .block-1-hello-mobile {
     font-size: 30px;
+  }
+
+  .block-1-deskr-mobile {
+    font-size: 16px;
   }
 
   /*BLOCK 2 цитата 1*/
@@ -1471,5 +1495,168 @@ body {
   .block-8-descr-mobile {
     font-size: 22px;
     width: 90%;
+  }
+
+  /* SERVICES*/
+  .services-name-mobile {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .services-items-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+    margin: auto auto;
+    width: 90%;
+  }
+
+  .services-item-box-mobile {
+    width: 100%;
+  }
+
+  .services-item-descr-mobile {
+    font-size: 14px;
+  }
+
+  .price-header-mobile {
+    font-size: 20px;
+  }
+
+  .price-dscr-mobile {
+    font-size: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+
+  .price-line-mobile {
+    width: 260px;
+  }
+
+  /* QUESTION*/
+  .question-name-mobile {
+    font-size: 30px;
+  }
+
+  .question-descr-mobile {
+    font-size: 20px;
+  }
+
+  .question-items-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question-items-btn-1-mobile {
+    width: 100%;
+    text-align: center;
+  }
+
+  .question-items-btn-2-mobile {
+    margin-top: 70px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ABOUT*/
+
+  .about-block-1-name-mobile {
+    font-size: 28px;
+  }
+
+  .about-block-1-deskr-mobile {
+    font-size: 12px;
+  }
+
+  .about-block-2-header-mobile {
+    font-size: 30px;
+    padding-bottom: 0;
+    padding-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .about-block-2-content-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-block-2-items-left-mobile {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .about-block-2-items-right-mobile {
+    width: 100%;
+  }
+
+  .about-block-2-items-name-mobile {
+    font-size: 18px;
+  }
+
+  .about-block-2-items-descr-mobile {
+    font-size: 12px;
+  }
+
+  .about-block-2-photo-mobile {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px 0 30px;
+    height: auto;
+  }
+
+  /* CONTACTS*/
+
+  .contact-container-block-1-mobile {
+    height: auto;
+  }
+  .contact-container-block-1-header-mobile {
+    font-size: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+  }
+
+  .contact-container-block-2-header-mobile {
+    font-size: 22px;
+  }
+
+  .contact-container-block-2-content-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-container-block-2-left-data-mobile {
+    padding-left: 0;
+  }
+
+  .contact-container-block-2-left-mobile {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-container-block-2-tel-mobile {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-container-block-2-mail-mobile {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-container-block-2-social-mobile {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .contact-container-block-2-right-mobile {
+    padding: 0;
+    width: 80%;
+    text-align: center;
   }
 }
