@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт копирайтера</title>
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
@@ -30,20 +35,50 @@
                 <li class="header-menu-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <nav class="nav-container-mobile">
+            <i class="fas fa-bars mobile-menu" id="mobile-menu-btn"></i>
+        </nav>
     </header>
+
+    <!--MODALS-->
+
+    <div class="modal" id="modal-mobile-menu">
+        <div class="modal-mobile-menu-content">
+            <div class="mobile-menu-container">
+                <i class="fas fa-times modal-close-btn" id="modal-mobile-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="./index.html" class="mobile-menu-item">ГЛАВНАЯ</a>
+                    <a href="./services.html" class="mobile-menu-item">УСЛУГИ</a>
+                    <a href="./about.html" class="mobile-menu-item">ОБО МНЕ</a>
+                    <a href="./portfolio.html" class="mobile-menu-item">ПОРТФОЛИО</a>
+                    <a href="./contacts.html" class="mobile-menu-item">КОНТАКТЫ</a>
+                </nav>
+                <div class="mobile-menu-conacts">
+                    <hr class="top-section-line">
+                    <a href="tel:+380983120813" class="mobile-menu-tel">+38 098 312 08 13</a>
+                    <a href="mailto:daria.hoba@gmail.com" class="mobile-menu-e-mail">daria.hoba@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
-        <section class="portfolio-google-container">
-            <div class="portfolio-google-left-column">
+        <section class="portfolio-google-container portfolio-google-container-mobile">
+            <div class="portfolio-google-left-column portfolio-google-left-column-mobile">
                 <!-- Slider main container -->
-                <div class="swiper-container">
+                <div class="swiper-container swiper-container-mobile">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <img src="./img/portfolio-google/cover.jpg" class="swiper-slide" alt="photo project">
-                        <img src="./img/portfolio-google/photo-1.png" class="swiper-slide" alt="photo project">
-                        <img src="./img/portfolio-google/photo-2.png" class="swiper-slide" alt="photo project">
-                        <img src="./img/portfolio-google/photo-3.png" class="swiper-slide" alt="photo project">
-                        <img src="./img/portfolio-google/photo-4.png" class="swiper-slide" alt="photo project">
+                        <img src="./img/portfolio-google/cover.jpg" class="swiper-slide swiper-slide-mobile"
+                            alt="photo project">
+                        <img src="./img/portfolio-google/photo-1.png" class="swiper-slide swiper-slide-mobile"
+                            alt="photo project">
+                        <img src="./img/portfolio-google/photo-2.png" class="swiper-slide swiper-slide-mobile"
+                            alt="photo project">
+                        <img src="./img/portfolio-google/photo-3.png" class="swiper-slide swiper-slide-mobile"
+                            alt="photo project">
+                        <img src="./img/portfolio-google/photo-4.png" class="swiper-slide swiper-slide-mobile"
+                            alt="photo project">
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -57,63 +92,71 @@
                 </div>
             </div>
 
-            <div class="portfolio-google-right-column">
-                <h1 class="portfolio-google-right-column-name">Google Мой бизнес</h1>
-                <p><b>Год:</b> 2020</p>
-                <p><b>Задача:</b> Представить компанию в Google.</p>
-                <p><b>Решение:</b> Разместила информацию о компании в Поиске и на Картах Гугл, сделала сайт-визитку.
-                Таким профиль маникюрного кабинета теперь видят пользователи:
-                <p>Сайт-визитка: <p class="portfolio-google-right-column-link">https://nails-kyiv.business.site/</p>
-                Отображение в Поиске: <p class="portfolio-google-right-column-link">http://bit.do/fGsxz</p>
-                Отображение в Гугл картах: <p class="portfolio-google-right-column-link">http://bit.do/fGsxL</p></p></p>
+            <div class="portfolio-google-right-column portfolio-google-right-column-mobile">
+                <h1 class="portfolio-google-right-column-name portfolio-google-right-column-name-mobile">Google Мой
+                    бизнес</h1>
+                <p class="portfolio-txt-mobile"><b>Год:</b> 2020</p>
+                <p class="portfolio-txt-mobile"><b>Задача:</b> Представить компанию в Google.</p>
+                <p class="portfolio-txt-mobile"><b>Решение:</b> Разместила информацию о компании в Поиске и на Картах
+                    Гугл, сделала сайт-визитку. Таким профиль маникюрного кабинета теперь видят пользователи:</p>
+                <p class="portfolio-txt-mobile">Сайт-визитка:</p>
+                <p class="portfolio-google-right-column-link portfolio-txt-mobile">https://nails-kyiv.business.site/</p>
+                <p class="portfolio-txt-mobile">Отображение в Поиске:</p>
+                <p class="portfolio-google-right-column-link portfolio-txt-mobile">http://bit.do/fGsxz</p>
+                <p class="portfolio-txt-mobile">Отображение в Гугл картах:</p>
+                <p class="portfolio-google-right-column-link portfolio-txt-mobile">http://bit.do/fGsxL</p>
             </div>
         </section>
 
         <section class="portfolio-down-block">
             <div>
-                <ul class="portfolio-down-block-items">
-                    <li class="portfolio-down-block-item">
+                <ul class="portfolio-down-block-items portfolio-down-block-items-mobile">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
                         <img src="./img/portfolio/Oak.webp" alt="нейминг" height="50" width="100">
-                        <a href="./portfolio-naming.html">Нейминг</a>
+                        <a class="portfolio-down-name-mobile" href="./portfolio-naming.html">Нейминг</a>
                     </li>
-                    <li class="portfolio-down-block-item">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
                         <img src="./img/portfolio/Promin.webp" alt="каталог" height="50" width="100">
-                        <a href="./portfolio-catalog.html">Каталог</a>
+                        <a class="portfolio-down-name-mobile" href="./portfolio-catalog.html">Каталог</a>
                     </li>
-                    <li class="portfolio-down-block-item">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
                         <img src="./img/portfolio/social-media.webp" alt="соцсети" height="50" width="100">
-                        <a href="./portfolio-social.html">Соцсети</a>
+                        <a class="portfolio-down-name-mobile" href="./portfolio-social.html">Соцсети</a>
                     </li>
-                    <li class="portfolio-down-block-item">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
                         <img src="./img/portfolio/interw.webp" alt="интервью" height="50" width="100">
-                        <a href="./portfolio-video.html">Интервью</a>
+                        <a class="portfolio-down-name-mobile" href="./portfolio-video.html">Интервью</a>
                     </li>
-                    <li class="portfolio-down-block-item">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
                         <img src="./img/portfolio/scripts.webp" alt="скрипты" height="50" width="100">
-                        <a href="./portfolio-scripts.html">Скрипты</a>
+                        <a class="portfolio-down-name-mobile" href="./portfolio-scripts.html">Скрипты</a>
                     </li>
-                    <li class="portfolio-down-block-item">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
                         <img src="./img/portfolio/stikers.webp" alt="стикеры" height="50" width="100">
-                        <a href="./portfolio-stickerpacks.html">Стикерпаки</a>
+                        <a class="portfolio-down-name-mobile" href="./portfolio-stickerpacks.html">Стикерпаки</a>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
+
     <!--Футер-->
-    <footer class="footer">
-        <p class="footer-name">© 2020, Novoseletska Daria</p>
-
+    <footer class="footer footer-mobile">
+        <p class="footer-name footer-name-mobile">© 2020, Novoseletska Daria</p>
         <ul class="footer-social">
-            <li><a href="https://www.facebook.com/novoseletskayadp"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/da_ledaidai"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://www.facebook.com/novoseletskayadp"><i
+                        class="fab fa-facebook-square fa-facebook-square-mobile"></i></a></li>
+            <li><a href="https://www.instagram.com/da_ledaidai"><i
+                        class="fab fa-instagram-square fa-instagram-square-mobile"></i></a></li>
         </ul>
-
         <ul class="footer-contacts">
-            <li><a href="tel:+380983120813" class="footer-contacts-tel">+38 098 312 08 13</a></li>
-            <li><a href="mailto:daria.hoba@gmail.com" class="footer-contacts-e-mail">daria.hoba@gmail.com</a></li>
+            <li><a href="tel:+380983120813" class="footer-contacts-tel footer-contacts-tel-mobile">+38 098 312 08 13</a>
+            </li>
+            <li><a href="mailto:daria.hoba@gmail.com"
+                    class="footer-contacts-e-mail footer-contacts-e-mail-mobile">daria.hoba@gmail.com</a></li>
         </ul>
     </footer>
+    <script src="./scripts/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

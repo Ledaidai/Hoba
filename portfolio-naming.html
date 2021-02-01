@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт копирайтера</title>
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
@@ -30,95 +35,133 @@
                 <li class="header-menu-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <nav class="nav-container-mobile">
+            <i class="fas fa-bars mobile-menu" id="mobile-menu-btn"></i>
+        </nav>
     </header>
-    <main>
-    <section class="portfolio-naming-container">
-        <div class="portfolio-naming-left-column">
-            <!-- Slider main container -->
-            <div class="swiper-container" >
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <img src="./img/portfolio-naming/2.jpg" class="swiper-slide" alt="naming photo 1">
-                    <img src="./img/portfolio-naming/3.jpg" class="swiper-slide" alt="naming photo 2">
-                    <img src="./img/portfolio-naming/4.jpg" class="swiper-slide" alt="naming photo 3">
+
+    <!--MODALS-->
+
+    <div class="modal" id="modal-mobile-menu">
+        <div class="modal-mobile-menu-content">
+            <div class="mobile-menu-container">
+                <i class="fas fa-times modal-close-btn" id="modal-mobile-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="./index.html" class="mobile-menu-item">ГЛАВНАЯ</a>
+                    <a href="./services.html" class="mobile-menu-item">УСЛУГИ</a>
+                    <a href="./about.html" class="mobile-menu-item">ОБО МНЕ</a>
+                    <a href="./portfolio.html" class="mobile-menu-item">ПОРТФОЛИО</a>
+                    <a href="./contacts.html" class="mobile-menu-item">КОНТАКТЫ</a>
+                </nav>
+                <div class="mobile-menu-conacts">
+                    <hr class="top-section-line">
+                    <a href="tel:+380983120813" class="mobile-menu-tel">+38 098 312 08 13</a>
+                    <a href="mailto:daria.hoba@gmail.com" class="mobile-menu-e-mail">daria.hoba@gmail.com</a>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
             </div>
         </div>
+    </div>
+    <main>
+        <section class="portfolio-naming-container portfolio-naming-container-mobile">
+            <div class="portfolio-naming-left-column portfolio-naming-left-column-mobile">
+                <!-- Slider main container -->
+                <div class="swiper-container swiper-container-mobile">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <img src="./img/portfolio-naming/2.jpg" class="swiper-slide swiper-slide-mobile"
+                            alt="naming photo 1">
+                        <img src="./img/portfolio-naming/3.jpg" class="swiper-slide swiper-slide-mobile"
+                            alt="naming photo 2">
+                        <img src="./img/portfolio-naming/4.jpg" class="swiper-slide swiper-slide-mobile"
+                            alt="naming photo 3">
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-        <div class="portfolio-naming-right-column">
-            <h1 class="portfolio-naming-right-column-name">Нейминг: Oak Grove Town</h1>
-            <p><b>Год:</b> 2017</p>
-            <p><b>Ссылка:</b> <a href="https://oakgrove.town/" class="portfolio-naming-right-column-link">oakgrove.town</a></p>
-            <p><b>Задача:</b> Придумать название для коттеджного поселка в Ирпене. Особенность: таунхаусы созданы в скандинавском стиле, на
-            территории расположена дубовая роща.</p>
-            <p><b>Решение:</b> Предложила 10 названий с детальным описанием концепций, которые можно использовать для составления уникального
-            предложения.
-            Большинство вариантов построены вокруг тематики Дании, скандинавского образа жизни и дубов. Помимо выбранного варианта
-            Oak Grove Town, были и такие:</p>
-            <ul>
-            <li>Egeskov (Эгешков)</li>
-            <li>Denmark Nova</li>
-            <li>(SPA) Scandinavian Personal Apartments</li>
-            <li>Датский амт</li>
-            <li>Andersen</li>
-            </ul>
-        </div>
-    </section>
-    <section class="portfolio-down-block">
-        <div>
-            <ul class="portfolio-down-block-items">
-                <li class="portfolio-down-block-item">
-                    <img src="./img/portfolio/Oak.webp" alt="каталог" height="50" width="100">
-                    <a href="./portfolio-catalog.html">Каталог</a>
-                </li>
-                <li class="portfolio-down-block-item">
-                    <img src="./img/portfolio/social-media.webp" alt="соцсети" height="50" width="100">
-                    <a href="./portfolio-social.html">Соцсети</a>
-                </li>
-                <li class="portfolio-down-block-item">
-                    <img src="./img/portfolio/interw.webp" alt="интервью" height="50" width="100">
-                    <a href="./portfolio-video.html">Интервью</a>
-                </li>
-                <li class="portfolio-down-block-item">
-                    <img src="./img/portfolio/scripts.webp" alt="скрипты" height="50" width="100">
-                    <a href="./portfolio-scripts.html">Скрипты</a>
-                </li>
-                <li class="portfolio-down-block-item">
-                    <img src="./img/portfolio/stikers.webp" alt="стикеры" height="50" width="100">
-                    <a href="./portfolio-stickerpacks.html">Стикерпаки</a>
-                </li>
-                <li class="portfolio-down-block-item">
-                    <img src="./img/portfolio/scripts.webp" alt="мой бизнес" height="50" width="100">
-                    <a href="./portfolio-google.html">Google Мой бизнес</a>
-                </li>
-            </ul>
-        </div>
-    </section>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+            <div class="portfolio-naming-right-column portfolio-naming-right-column-mobile">
+                <h1 class="portfolio-naming-right-column-name portfolio-naming-right-column-name-mobile">Нейминг: Oak
+                    Grove Town</h1>
+                <p class="portfolio-txt-mobile"><b>Год:</b> 2017</p>
+                <p class="portfolio-txt-mobile"><b>Ссылка:</b> <a href="https://oakgrove.town/"
+                        class="portfolio-naming-right-column-link portfolio-txt-mobile">oakgrove.town</a></p>
+                <p class="portfolio-txt-mobile"><b>Задача:</b> Придумать название для коттеджного поселка в Ирпене.
+                    Особенность: таунхаусы созданы в
+                    скандинавском стиле, на
+                    территории расположена дубовая роща.</p>
+                <p class="portfolio-txt-mobile"><b>Решение:</b> Предложила 10 названий с детальным описанием концепций,
+                    которые можно использовать
+                    для составления уникального
+                    предложения.
+                    Большинство вариантов построены вокруг тематики Дании, скандинавского образа жизни и дубов. Помимо
+                    выбранного варианта
+                    Oak Grove Town, были и такие:</p>
+                <ul class="portfolio-txt-mobile">
+                    <li>Egeskov (Эгешков)</li>
+                    <li>Denmark Nova</li>
+                    <li>(SPA) Scandinavian Personal Apartments</li>
+                    <li>Датский амт</li>
+                    <li>Andersen</li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio-down-block">
+            <div>
+                <ul class="portfolio-down-block-items portfolio-down-block-items-mobile">
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
+                        <img src="./img/portfolio/Oak.webp" alt="каталог" height="50" width="100">
+                        <a class="portfolio-down-name-mobile" href="./portfolio-catalog.html">Каталог</a>
+                    </li>
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
+                        <img src="./img/portfolio/social-media.webp" alt="соцсети" height="50" width="100">
+                        <a class="portfolio-down-name-mobile" href="./portfolio-social.html">Соцсети</a>
+                    </li>
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
+                        <img src="./img/portfolio/interw.webp" alt="интервью" height="50" width="100">
+                        <a class="portfolio-down-name-mobile" href="./portfolio-video.html">Интервью</a>
+                    </li>
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
+                        <img src="./img/portfolio/scripts.webp" alt="скрипты" height="50" width="100">
+                        <a class="portfolio-down-name-mobile" href="./portfolio-scripts.html">Скрипты</a>
+                    </li>
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
+                        <img src="./img/portfolio/stikers.webp" alt="стикеры" height="50" width="100">
+                        <a class="portfolio-down-name-mobile" href="./portfolio-stickerpacks.html">Стикерпаки</a>
+                    </li>
+                    <li class="portfolio-down-block-item portfolio-down-block-item-mobile">
+                        <img src="./img/portfolio/scripts.webp" alt="мой бизнес" height="50" width="100">
+                        <a class="portfolio-down-name-mobile" href="./portfolio-google.html">Google <br> Мой бизнес</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <!--Футер-->
-    <footer class="footer">
-        <p class="footer-name">© 2020, Novoseletska Daria</p>
-    
+    <footer class="footer footer-mobile">
+        <p class="footer-name footer-name-mobile">© 2020, Novoseletska Daria</p>
         <ul class="footer-social">
-            <li><a href="https://www.facebook.com/novoseletskayadp"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/da_ledaidai"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://www.facebook.com/novoseletskayadp"><i
+                        class="fab fa-facebook-square fa-facebook-square-mobile"></i></a></li>
+            <li><a href="https://www.instagram.com/da_ledaidai"><i
+                        class="fab fa-instagram-square fa-instagram-square-mobile"></i></a></li>
         </ul>
-    
         <ul class="footer-contacts">
-            <li><a href="tel:+380983120813" class="footer-contacts-tel">+38 098 312 08 13</a></li>
-            <li><a href="mailto:daria.hoba@gmail.com" class="footer-contacts-e-mail">daria.hoba@gmail.com</a></li>
+            <li><a href="tel:+380983120813" class="footer-contacts-tel footer-contacts-tel-mobile">+38 098 312 08 13</a>
+            </li>
+            <li><a href="mailto:daria.hoba@gmail.com"
+                    class="footer-contacts-e-mail footer-contacts-e-mail-mobile">daria.hoba@gmail.com</a></li>
         </ul>
     </footer>
+    <script src="./scripts/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -144,7 +187,6 @@
             },
         })
     </script>
-    </body>
-    </html>
+</body>
 
-        
+</html>

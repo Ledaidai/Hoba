@@ -920,7 +920,7 @@ body {
 
 .portfolio-naming-right-column-link:visited {
   text-decoration: none;
-  color: #b8424b;
+  color: var(--txt-c-pink);
 }
 
 /* PORTFOLIO-CATALOG PAGE*/
@@ -959,12 +959,12 @@ body {
 
 .portfolio-catalog-right-column-link {
   text-decoration: none;
-  color: #b8424b;
+  color: var(--txt-c-pink);
 }
 
 .portfolio-catalog-right-column-link:visited {
   text-decoration: none;
-  color: #b8424b;
+  color: var(--txt-c-pink);
 }
 
 /* PORTFOLIO-SOCIAL PAGE*/
@@ -1037,12 +1037,12 @@ body {
 
 .portfolio-video-right-column-link {
   text-decoration: none;
-  color: #b8424b;
+  color: var(--txt-c-pink);
 }
 
 .portfolio-video-right-column-link:visited {
   text-decoration: none;
-  color: #b8424b;
+  color: var(--txt-c-pink);
 }
 
 /* PORTFOLIO-SCRIPTS PAGE*/
@@ -1149,7 +1149,8 @@ body {
 
 .portfolio-google-right-column-link {
   text-decoration: none;
-  color: #b8424b;
+  color: var(--txt-c-pink);
+  cursor: pointer;
 }
 
 .portfolio-down-block {
@@ -1658,5 +1659,201 @@ body {
     padding: 0;
     width: 80%;
     text-align: center;
+  }
+
+  /* PORTFOLIO*/
+  .portfolio-1-block-name-mobile {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .portfolio-1-block-descr-mobile {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .portfolio-2-block-items-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-2-block-item-project-mobile {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .portfolio-2-block-item-name-mobile {
+    font-size: 28px;
+  }
+
+  .portfolio-2-block-item-descr-mobile {
+    font-size: 14px;
+  }
+
+  /* PORTFOLIO-DOWN-BLOCK*/
+  .portfolio-down-block-items-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+
+  .portfolio-down-block-item-mobile {
+    padding-bottom: 10px;
+  }
+
+  .portfolio-down-name-mobile {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* PORTFOLIO-SLIDER*/
+
+  .swiper-slide-mobile {
+    padding-top: 60px;
+  }
+
+  .swiper-container-mobile {
+    width: 100%;
+    height: 30%;
+  }
+
+  /* PORTFOLIO-NAMING*/
+
+  .portfolio-txt-mobile {
+    font-size: 14px;
+  }
+
+  .portfolio-naming-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-naming-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-naming-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-naming-right-column-name-mobile {
+    font-size: 20px;
+  }
+
+  /* PORTFOLIO-CATALOG*/
+  .portfolio-catalog-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-catalog-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-catalog-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-catalog-right-column-name-mobile {
+    font-size: 20px;
+  }
+
+  /* PORTFOLIO-SOCIAL*/
+  .portfolio-social-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-social-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-social-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-social-right-column-name-mobile {
+    font-size: 20px;
+  }
+
+  /* PORTFOLIO-VIDEO*/
+  .portfolio-video-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-video-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-video-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-video-right-column-name-mobile {
+    font-size: 20px;
+  }
+
+  /* PORTFOLIO-SCRIPTS*/
+  .portfolio-scripts-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-scripts-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-scripts-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-scripts-right-column-name-mobile {
+    font-size: 20px;
+  }
+
+  /* PORTFOLIO-STICKERPACKS*/
+  .portfolio-stickerpacks-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-stickerpacks-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-stickerpacks-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-stickerpacks-right-column-name-mobile {
+    font-size: 20px;
+  }
+
+  /* PORTFOLIO-GOOGLE*/
+  .portfolio-google-container-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .portfolio-google-left-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-google-right-column-mobile {
+    width: 100%;
+  }
+
+  .portfolio-google-right-column-name-mobile {
+    font-size: 20px;
   }
 }

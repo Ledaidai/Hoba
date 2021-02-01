@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт копирайтера</title>
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
@@ -28,83 +33,120 @@
                 <li class="header-menu-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <nav class="nav-container-mobile">
+            <i class="fas fa-bars mobile-menu" id="mobile-menu-btn"></i>
+        </nav>
     </header>
+
+    <!--MODALS-->
+
+    <div class="modal" id="modal-mobile-menu">
+        <div class="modal-mobile-menu-content">
+            <div class="mobile-menu-container">
+                <i class="fas fa-times modal-close-btn" id="modal-mobile-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="./index.html" class="mobile-menu-item">ГЛАВНАЯ</a>
+                    <a href="./services.html" class="mobile-menu-item">УСЛУГИ</a>
+                    <a href="./about.html" class="mobile-menu-item">ОБО МНЕ</a>
+                    <a href="./portfolio.html" class="mobile-menu-item">ПОРТФОЛИО</a>
+                    <a href="./contacts.html" class="mobile-menu-item">КОНТАКТЫ</a>
+                </nav>
+                <div class="mobile-menu-conacts">
+                    <hr class="top-section-line">
+                    <a href="tel:+380983120813" class="mobile-menu-tel">+38 098 312 08 13</a>
+                    <a href="mailto:daria.hoba@gmail.com" class="mobile-menu-e-mail">daria.hoba@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="portfolio-1-block">
-            <h1 class="portfolio-1-block-name">ПОРТФОЛИО</h1>
-            <p class="portfolio-1-block-descr">Тут представлены некоторые мои работы<br> (* — кейсы под NDA)</p>
+            <h1 class="portfolio-1-block-name portfolio-1-block-name-mobile">ПОРТФОЛИО</h1>
+            <p class="portfolio-1-block-descr portfolio-1-block-descr-mobile">Тут представлены некоторые мои работы<br>
+                (* — кейсы под NDA)</p>
         </section>
         <section class="portfolio-2-block">
-            <ul class="portfolio-2-block-items">
-                <li class="portfolio-2-block-item-project">
+            <ul class="portfolio-2-block-items portfolio-2-block-items-mobile">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/Oak_1.webp" alt="naming">
                     <a href="./portfolio-naming.html" class="portfolio-2-block-item-link">
-                        <h2 class="portfolio-2-block-item-name">Нейминг</h2>
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Нейминг</h2>
                     </a>
-                    <p class="portfolio-2-block-item-descr">| Разработка названия для коттеджного городка |</p>
-                    
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Разработка названия
+                        для коттеджного городка |</p>
+
                 </li>
-                <li class="portfolio-2-block-item-project">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/Promin.webp" alt="catalog">
-                    <a href="./portfolio-catalog.html"class="portfolio-2-block-item-link">
-                        <h2 class="portfolio-2-block-item-name">Каталог</h2>
+                    <a href="./portfolio-catalog.html" class="portfolio-2-block-item-link">
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Каталог</h2>
                     </a>
-                 <p class="portfolio-2-block-item-descr">| Тексты для каталога Promin |</p>
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Тексты для каталога
+                        Promin |</p>
                 </li>
-                <li class="portfolio-2-block-item-project">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/social-media.webp" alt="social media">
                     <a href="./portfolio-social.html" class="portfolio-2-block-item-link">
-                        <h2 class="portfolio-2-block-item-name">Соцсети</h2>
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Соцсети</h2>
                     </a>
-                    <p class="portfolio-2-block-item-descr">| Посты для соцсетей |</p>
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Посты для соцсетей |
+                    </p>
                 </li>
-                <li class="portfolio-2-block-item-project">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/interw.webp" alt="interview">
-                    <a href="./portfolio-video.html" class="portfolio-2-block-item-link">  
-                        <h2 class="portfolio-2-block-item-name">Интервью</h2>
+                    <a href="./portfolio-video.html" class="portfolio-2-block-item-link">
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Интервью</h2>
                     </a>
-                    <p class="portfolio-2-block-item-descr">| Подготовка вопросов для интервью |</p>
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Подготовка вопросов
+                        для интервью |</p>
                 </li>
-                <li class="portfolio-2-block-item-project">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/scripts.webp" alt="scripts">
                     <a href="./portfolio-scripts.html" class="portfolio-2-block-item-link">
-                        <h2 class="portfolio-2-block-item-name">Скрипты</h2>
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Скрипты</h2>
                     </a>
-                    <p class="portfolio-2-block-item-descr">| Сценарии разговоров с клиентами* |</p>
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Сценарии разговоров с
+                        клиентами* |</p>
                 </li>
-                <li class="portfolio-2-block-item-project">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/stikers.webp" alt="stickers">
                     <a href="./portfolio-stickerpacks.html" class="portfolio-2-block-item-link">
-                        <h2 class="portfolio-2-block-item-name">Стикерпаки</h2>
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Стикерпаки</h2>
                     </a>
-                    <p class="portfolio-2-block-item-descr">| Создание коллекций стикеров для мессенджера* |</p>
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Создание коллекций
+                        стикеров для мессенджера* |</p>
                 </li>
-                <li class="portfolio-2-block-item-project">
+                <li class="portfolio-2-block-item-project portfolio-2-block-item-project-mobile">
                     <img src="./img/portfolio/google.webp" alt="google my business">
                     <a href="./portfolio-google.html" class="portfolio-2-block-item-link">
-                        <h2 class="portfolio-2-block-item-name">Google Мой Бизнес</h2> 
+                        <h2 class="portfolio-2-block-item-name portfolio-2-block-item-name-mobile">Google Мой Бизнес
+                        </h2>
                     </a>
-                    <p class="portfolio-2-block-item-descr">| Информация о компании в Поиске и на Картах Гугл |</p>
+                    <p class="portfolio-2-block-item-descr portfolio-2-block-item-descr-mobile">| Информация о компании
+                        в Поиске и на Картах Гугл |</p>
                 </li>
             </ul>
         </section>
 
     </main>
-    
+
     <!--Футер-->
-    <footer class="footer">
-        <p class="footer-name">© 2020, Novoseletska Daria</p>
-    
+    <footer class="footer footer-mobile">
+        <p class="footer-name footer-name-mobile">© 2020, Novoseletska Daria</p>
         <ul class="footer-social">
-            <li><a href="https://www.facebook.com/novoseletskayadp"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/da_ledaidai"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://www.facebook.com/novoseletskayadp"><i
+                        class="fab fa-facebook-square fa-facebook-square-mobile"></i></a></li>
+            <li><a href="https://www.instagram.com/da_ledaidai"><i
+                        class="fab fa-instagram-square fa-instagram-square-mobile"></i></a></li>
         </ul>
-    
         <ul class="footer-contacts">
-            <li><a href="tel:+380983120813" class="footer-contacts-tel">+38 098 312 08 13</a></li>
-            <li><a href="mailto:daria.hoba@gmail.com" class="footer-contacts-e-mail">daria.hoba@gmail.com</a></li>
+            <li><a href="tel:+380983120813" class="footer-contacts-tel footer-contacts-tel-mobile">+38 098 312 08 13</a>
+            </li>
+            <li><a href="mailto:daria.hoba@gmail.com"
+                    class="footer-contacts-e-mail footer-contacts-e-mail-mobile">daria.hoba@gmail.com</a></li>
         </ul>
     </footer>
-    </body>
-    
-    </html>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
