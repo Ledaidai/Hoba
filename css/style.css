@@ -819,6 +819,11 @@ body {
   background-color: var(--c-grey-dark);
   text-align: center;
   padding: 100px;
+  display: block;
+}
+
+.brief-container-mobile {
+  display: none;
 }
 
 /* PORTFOLIO PAGE*/
@@ -1185,6 +1190,15 @@ body {
 }
 
 @media (max-width: 980px) {
+  /*BRIEF*/
+  .brief-container {
+    display: none;
+  }
+
+  .brief-container-mobile {
+    display: block;
+  }
+
   /*MENU*/
   .nav-container {
     display: none;
@@ -1863,5 +1877,14 @@ body {
 
   .portfolio-google-right-column-name-mobile {
     font-size: 20px;
+  }
+
+  /* BRIEF*/
+
+  .brief-container-mobile {
+    background-color: var(--c-grey-dark);
+    text-align: center;
+    padding: 50px 5px;
+    padding-bottom: 10px;
   }
 }

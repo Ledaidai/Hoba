@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бриф</title>
+    <style>
+        .modal {
+            display: none;
+        }
+    </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;1,700&display=swap"
@@ -28,7 +33,32 @@
                 <li class="header-menu-item"><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <nav class="nav-container-mobile">
+            <i class="fas fa-bars mobile-menu" id="mobile-menu-btn"></i>
+        </nav>
     </header>
+
+    <!--MODALS-->
+
+    <div class="modal" id="modal-mobile-menu">
+        <div class="modal-mobile-menu-content">
+            <div class="mobile-menu-container">
+                <i class="fas fa-times modal-close-btn" id="modal-mobile-close-btn"></i>
+                <nav class="mobile-menu-items">
+                    <a href="./index.html" class="mobile-menu-item">ГЛАВНАЯ</a>
+                    <a href="./services.html" class="mobile-menu-item">УСЛУГИ</a>
+                    <a href="./about.html" class="mobile-menu-item">ОБО МНЕ</a>
+                    <a href="./portfolio.html" class="mobile-menu-item">ПОРТФОЛИО</a>
+                    <a href="./contacts.html" class="mobile-menu-item">КОНТАКТЫ</a>
+                </nav>
+                <div class="mobile-menu-conacts">
+                    <hr class="top-section-line">
+                    <a href="tel:+380983120813" class="mobile-menu-tel">+38 098 312 08 13</a>
+                    <a href="mailto:daria.hoba@gmail.com" class="mobile-menu-e-mail">daria.hoba@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
         <section class="brief-container">
@@ -37,22 +67,31 @@
                 width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Загрузка…
             </iframe>
         </section>
+        <section class="brief-container-mobile">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScuuhDRQ9urp0Yd4Yxx92ceS0r-p96n1H4SDCB9le0FSs2whw/viewform?embedded=true"
+                width="280" height="1100" frameborder="0" marginheight="0" marginwidth="0">Загрузка…
+            </iframe>
+        </section>
     </main>
 
     <!--Футер-->
-    <footer class="footer">
-        <p class="footer-name">© 2020, Novoseletska Daria</p>
-
+    <footer class="footer footer-mobile">
+        <p class="footer-name footer-name-mobile">© 2020, Novoseletska Daria</p>
         <ul class="footer-social">
-            <li><a href="https://www.facebook.com/novoseletskayadp"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://www.instagram.com/da_ledaidai"><i class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://www.facebook.com/novoseletskayadp"><i
+                        class="fab fa-facebook-square fa-facebook-square-mobile"></i></a></li>
+            <li><a href="https://www.instagram.com/da_ledaidai"><i
+                        class="fab fa-instagram-square fa-instagram-square-mobile"></i></a></li>
         </ul>
-
         <ul class="footer-contacts">
-            <li><a href="tel:+380983120813" class="footer-contacts-tel">+38 098 312 08 13</a></li>
-            <li><a href="mailto:daria.hoba@gmail.com" class="footer-contacts-e-mail">daria.hoba@gmail.com</a></li>
+            <li><a href="tel:+380983120813" class="footer-contacts-tel footer-contacts-tel-mobile">+38 098 312 08 13</a>
+            </li>
+            <li><a href="mailto:daria.hoba@gmail.com"
+                    class="footer-contacts-e-mail footer-contacts-e-mail-mobile">daria.hoba@gmail.com</a></li>
         </ul>
     </footer>
+    <script src="./scripts/main.js"></script>
 
 </body>
 
