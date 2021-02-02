@@ -1204,6 +1204,7 @@ body {
     padding: 12px 14px;
     opacity: 0.5;
     cursor: pointer;
+    z-index: 5;
   }
 
   /*FOOTER*/
@@ -1267,6 +1268,7 @@ body {
 
   #modal-mobile-menu {
     background: var(--c-grey-light);
+    z-index: 999;
   }
 
   .modal-mobile-menu-content {
@@ -1711,7 +1713,6 @@ body {
   /* PORTFOLIO-SLIDER*/
 
   .swiper-slide-mobile {
-    padding-top: 60px;
   }
 
   .swiper-container-mobile {
@@ -1733,6 +1734,7 @@ body {
 
   .portfolio-naming-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-naming-right-column-mobile {
@@ -1752,6 +1754,7 @@ body {
 
   .portfolio-catalog-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-catalog-right-column-mobile {
@@ -1771,6 +1774,7 @@ body {
 
   .portfolio-social-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-social-right-column-mobile {
@@ -1790,6 +1794,7 @@ body {
 
   .portfolio-video-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-video-right-column-mobile {
@@ -1809,6 +1814,7 @@ body {
 
   .portfolio-scripts-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-scripts-right-column-mobile {
@@ -1828,6 +1834,7 @@ body {
 
   .portfolio-stickerpacks-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-stickerpacks-right-column-mobile {
@@ -1847,6 +1854,7 @@ body {
 
   .portfolio-google-left-column-mobile {
     width: 100%;
+    padding-top: 60px;
   }
 
   .portfolio-google-right-column-mobile {
